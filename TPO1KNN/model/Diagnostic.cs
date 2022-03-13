@@ -31,9 +31,5 @@ namespace TPO1KNN.model
         {
             Console.Write("cp : "+Cp+" target : "+Label+"\n");
         }
-
-        /*public void SetLabel(int data) {
-            if(data == 1) { this.Label = true}
-        }*/
     }
 }

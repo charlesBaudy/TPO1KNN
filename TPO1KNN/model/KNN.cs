@@ -17,7 +17,13 @@ namespace TPO1KNN.model
 
         public float EuclideanDistance(Diagnostic first_sample, Diagnostic second_sample)
         {
-            throw new NotImplementedException();
+            float cp = (first_sample.Cp - second_sample.Cp) * (first_sample.Cp - second_sample.Cp);
+            float ca = (first_sample.Ca - second_sample.Ca) * (first_sample.Ca - second_sample.Ca);
+            float thal = (first_sample.Thal - second_sample.Thal) * (first_sample.Thal - second_sample.Thal);
+            float oldPeak = (first_sample.Oldpeak - second_sample.Oldpeak) * (first_sample.Oldpeak - second_sample.Oldpeak);
+
+            return (float)Math.Sqrt(cp + ca + thal + oldPeak);
+
         }
 
         public float Evaluate(string filename_test_samples_csv)
