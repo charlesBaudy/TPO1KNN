@@ -15,7 +15,7 @@ namespace TP01KNN.model
         /* utils */
         float EuclideanDistance(Diagnostic first_sample, Diagnostic second_sample);
         float ManhattanDistance(Diagnostic first_sample, Diagnostic second_sample);
-        bool Vote(List<bool> sorted_labels);
+        bool Vote(List<bool> sorted_labels, int k);
         void ShellSort(List<float> distances, List<bool> labels);
         List<Diagnostic> ImportSamples(string filename_samples_csv);
     }

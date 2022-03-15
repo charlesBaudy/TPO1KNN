@@ -29,7 +29,7 @@ namespace TPO1KNN.model
 
         public void PrintInfo()
         {
-            Console.Write("cp : "+Cp+" target : "+Label+"\n");
+            Console.Write("cp : "+Cp+ " ca : " + Ca + " oldpeak : " + Oldpeak + " thal : " + Thal + " target : " +Label+"\n");
         }
     }
 }
